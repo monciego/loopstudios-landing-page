@@ -39,7 +39,7 @@ section {
   top: 40%;
   left: 45%;
   background-color: var(--white);
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--josefin-sans);
 }
 
 @media (max-width: 992px) {

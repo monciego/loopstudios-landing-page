@@ -1,4 +1,6 @@
 :root {
+  --josefin-sans: "Josefin Sans", sans-serif;
+  --alata-sans: "Alata", sans-serif;
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --dark-gray: hsl(0, 0%, 55%);
