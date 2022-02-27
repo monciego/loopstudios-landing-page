@@ -1,22 +1,23 @@
-import "./App.css";
-import { Navbar, Main, VR, Creations, Footer } from "./pages/imports";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Main />
-      <VR />
-      <Creations />
-      <Footer />
-      {/*   About Careers Events Products Support Immersive experiences that deliver
-      The leader in interactive VR Founded in 2011, Loopstudios has been
-      producing world-class virtual reality projects for some of the best
-      companies around the globe. Our award-winning creations have transformed
-      businesses through digital experiences that bind to their brand. Our
-      creations See all Deep earth Night arcade Soccer team VR The grid From up
-      above VR Pocket borealis The curiosity Make it fisheye About Careers
-      Events Products Support © 2021 Loopstudios. All rights reserved. */}
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
