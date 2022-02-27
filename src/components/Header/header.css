@@ -1,10 +1,10 @@
-header {
+.main {
   background: url("../../images/desktop/image-hero.jpg") no-repeat center center;
   position: relative;
   z-index: 2;
 }
 
-header::before {
+.main::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -14,18 +14,18 @@ header::before {
 
 /* navbar */
 
-header nav {
+.main nav {
   height: 8rem;
   position: relative;
 }
 
 @media (max-width: 815px) {
-  header nav {
+  .main nav {
     height: 6rem;
   }
 }
 
-header nav .container {
+.main nav .container {
   height: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -18,7 +18,7 @@ const InteractiveVR = () => {
   }, []);
 
   return (
-    <section className="container">
+    <section className="vr container">
       <div className="interactive-image">
         <img
           src={windowWidth <= 992 ? `${vrImageMobile}` : `${vrImageDesktop}`}
