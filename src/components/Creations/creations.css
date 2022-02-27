@@ -1,0 +1,168 @@
+.creations {
+  padding-bottom: 4rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.creations header {
+  padding: 1.25rem 0 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.creations h3 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: var(--josefin-sans);
+}
+
+.creations button {
+  padding: 0.5rem 2.5rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  background-color: var(--white);
+  border: 2px solid var(--very-dark-gray);
+  border-radius: 2.5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.creations button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.card::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card span {
+  position: absolute;
+  z-index: 5;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  color: var(--white);
+  font-family: var(--josefin-sans);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+.card:hover span {
+  color: var(--black);
+}
+
+@media (max-width: 1060px) {
+  .creations h3 {
+    font-size: 1.75rem;
+  }
+
+  .creations button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card span {
+    font-size: 1.25rem;
+  }
+
+  .creations h3 {
+    font-size: 1.75rem;
+  }
+
+  .creations button {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 815px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .creations header {
+    padding-bottom: 3rem;
+  }
+
+  .card span {
+    font-size: 1rem;
+  }
+
+  .creations button {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .creations header {
+    padding-bottom: 2rem;
+  }
+
+  .card span {
+    font-size: 0.95rem;
+  }
+
+  .creations h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .creations button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
