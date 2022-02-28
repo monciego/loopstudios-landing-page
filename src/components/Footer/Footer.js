@@ -61,7 +61,7 @@ const Footer = () => {
               <img src={instagram} alt="instagram" />
             </div>
           </div>
-          <span> © 2021 Loopstudios. All rights reserved.</span>
+          <span> © 2022 Loopstudios. All rights reserved.</span>
         </div>
       </div>
     </footer>
