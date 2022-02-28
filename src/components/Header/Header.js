@@ -23,7 +23,13 @@ const Header = () => {
 
           <ul className={toggle ? "nav-links active" : "nav-links"}>
             <li>
-              <a href="#0">About</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://jerichobantiquete.netlify.app/"
+              >
+                About
+              </a>
             </li>
             <li>
               <a href="#0">Careers</a>
@@ -35,7 +41,13 @@ const Header = () => {
               <a href="#0">Products</a>
             </li>
             <li>
-              <a href="#0">Support</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/monciego"
+              >
+                Support
+              </a>
             </li>
           </ul>
 
