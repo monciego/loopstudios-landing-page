@@ -166,3 +166,9 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 345px) {
+  .creations button {
+    padding: 0.5rem 2rem;
+  }
+}
