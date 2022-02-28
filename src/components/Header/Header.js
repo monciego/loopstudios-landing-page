@@ -21,7 +21,7 @@ const Header = () => {
             </a>
           </div>
 
-          <ul className={toggle ? "active" : ""}>
+          <ul className={toggle ? "nav-links active" : "nav-links"}>
             <li>
               <a href="#0">About</a>
             </li>
